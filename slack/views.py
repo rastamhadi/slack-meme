@@ -53,4 +53,4 @@ def meme():
 
     slack.post_meme_to_webhook(payload)
 
-    return "Success!", 200
+    return "", 200
