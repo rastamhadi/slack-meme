@@ -41,6 +41,8 @@ def meme():
         meme_url = memegen.build_url(template, top, bottom)
     elif memeifier.image_exists(template):
         meme_url = memeifier.build_url(template, top, bottom)
+    elif text[:6] == "friday":
+        meme_url = memeifier.build_url("https://imgflip.com/s/meme/Rebecca-Black.jpg", "it%27s_friday_friday", "gotta_get_down_on_friday")
     else:
         return "That template doesn't exist. Type `/meme templates` to see valid templates or provide your own as a URL."
 
